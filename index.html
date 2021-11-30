@@ -10,15 +10,20 @@
 <body>
   <header></header>
   <main>
-    <div id="presentacion">
-      <p class="pattaya morado">Sergio Chulián Mantel</p>
-      <p class=" livvic blanco">DESARROLLADOR WEB Y MULTIPLATAFORMA</p>
-      <div>
-        <button class="boton-menu pattaya blanco">Proyectos</button>
-        <button class="boton-menu pattaya blanco">Testimonios</button>
-        <button class="boton-menu pattaya blanco">CV</button>
-        <button class="boton-menu pattaya blanco">Sobre mí</button>
-        <button class="boton-menu pattaya blanco">Contacto</button>
+    <div id="inicio">
+      <div id="presentacion">
+        <div id="letrero" class="blanco">
+          <p id="nombre" class="pattaya">Sergio Chulián Mantel</p>
+          <p id="titulo" class="livvic">DESARROLLADOR</p>
+          <p id="titulo" class="livvic">WEB Y MULTIPLATAFORMA</p>
+          <div id="botones">
+            <button class="boton-menu pattaya blanco">Proyectos</button>
+            <button class="boton-menu pattaya blanco">Testimonios</button>
+            <button class="boton-menu pattaya blanco">CV</button>
+            <button class="boton-menu pattaya blanco">Sobre mí</button>
+            <button class="boton-menu pattaya blanco">Contacto</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -84,30 +89,30 @@
       </div>
       <div>
         <div class="contact_form">
-          <div class="formulario">      
-            <form>       
+          <div class="formulario">
+            <form>
               <p>
                 <label for="nombre" class="colocar_nombre">Nombre</label>
                   <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
               </p>
-            
+
               <p>
                 <label for="email" class="colocar_email">Email</label>
                   <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
               </p>
-          
+
               <p>
                 <label for="asunto" class="colocar_asunto">Asunto</label>
                   <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-              </p>    
-            
+              </p>
+
               <p>
-                <label for="mensaje" class="colocar_mensaje">Mensaje</label>                     
-                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-              </p>                    
+                <label for="mensaje" class="colocar_mensaje">Mensaje</label>
+                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+              </p>
               <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
             </form>
-          </div>  
+          </div>
         </div>
       </div>
       <div id="boton-volver">
