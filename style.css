@@ -39,11 +39,18 @@
   color: #1B0024;
 }
 
-#inicio {
+section {
   height: 100vh;
+}
+
+#inicio {
   display: flex;
   align-items: center;
   background-image: url(./images/fondo1.jpg);
+}
+
+#letrero {
+  width: 100%;
 }
 
 #presentacion {
@@ -64,15 +71,22 @@
   font-size: 2vw;
 }
 
-#titulo {
+.desarrollador {
   margin: 2%;
   font-size: 4vw;
+  text-shadow: 0.1em 0.05em 0.1em rgb(30, 30, 30);
 }
 
 .boton-menu {
   background-color: #C52283;
 }
 
-.cuadro-proyecto {
+.boton-menu:hover {
+  background-color: #1B0024;
+}
 
+h2 {
+  font-family: pattaya;
+  font-size: 2vw;
+  text-align: center;
 }
