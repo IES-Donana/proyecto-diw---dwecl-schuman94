@@ -47,6 +47,9 @@ section {
   display: flex;
   align-items: center;
   background-image: url(./images/fondo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #letrero {
