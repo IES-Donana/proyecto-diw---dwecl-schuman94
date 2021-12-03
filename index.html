@@ -30,6 +30,14 @@
     <section id="proyectos">
       <div id="titulo-proyecto">
         <h2>Proyectos</h2>
+        <div id="titulo-proyecto">
+          <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div>
+        </div>
       </div>
     </section>
     <section id="testimonios">
@@ -87,29 +95,36 @@
           <div><p>sergio.chulian@iesdonana.org</p></div>
         </div>
       </div>
+
       <div>
         <div class="contact_form">
           <div class="formulario">
             <form>
               <p>
-                <label for="nombre" class="colocar_nombre">Nombre</label>
-                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                <label for="form-nombre" class="colocar_nombre">Nombre</label>
+                <input type="text" name="form-nombre" id="form-nombre" required="obligatorio" placeholder="Escribe tu nombre">
+              </p>
+
+              <p>
+                <label for="apellidos" class="colocar_apellidos">Apellidos</label>
+                <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
               </p>
 
               <p>
                 <label for="email" class="colocar_email">Email</label>
-                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
               </p>
 
               <p>
                 <label for="asunto" class="colocar_asunto">Asunto</label>
-                  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
               </p>
 
               <p>
                 <label for="mensaje" class="colocar_mensaje">Mensaje</label>
-                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
               </p>
+
               <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
             </form>
           </div>
