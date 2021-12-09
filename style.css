@@ -39,14 +39,37 @@
   color: #1B0024;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
   height: 100vh;
 }
 
+
+
 #inicio {
+  background-image: url(./images/fondo1.jpg);
   display: flex;
   align-items: center;
-  background-image: url(./images/fondo1.jpg);
+}
+
+#testimonios {
+  background-image: url(./images/fondo2.jpg);
+  color: white;
+}
+
+#sobremi {
+  background-image: url(./images/fondo3.jpg);
+  color: white;
+}
+
+#contacto {
+  height: 90vh;
+}
+
+#inicio, #testimonios, #sobremi {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -54,10 +77,12 @@ section {
 
 #letrero {
   width: 100%;
+  color: white;
 }
 
-#presentacion {
-  height: 40vh;
+#cuadro-morado {
+  min-height: 400px;
+  max-height: 450px;
   background: #6D53A5;
   background: linear-gradient(90deg, rgba(109,83,165,1) 0%, rgba(109,83,165,0) 100%);
   display: flex;
@@ -65,78 +90,285 @@ section {
   align-items: center;
 }
 
-#botones {
-  margin: 2%;
-}
-
 #nombre {
-  margin: 2%;
-  font-size: 2vw;
+  margin-left: 2%;
+  margin-bottom: 0.5%;
+  padding-top: 1%;
+  font-size: 2.5vw;
+  font-family: Pattaya, sans-serif;
 }
 
 .desarrollador {
-  margin: 2%;
-  font-size: 4vw;
+  margin-left: 2%;
+  font-size: 5vw;
   text-shadow: 0.1em 0.05em 0.1em rgb(30, 30, 30);
+}
+
+#botones {
+  margin: 2%;
+  display: flex;
+
 }
 
 .boton-menu {
   background-color: #C52283;
+  transform: skewX(-25deg);
+  padding: 0.2vw;
+  margin-right: 0.25vw;
+  margin-left: 0.25vw;
+  font-size: 1.5vw;
+  color: white;
+  min-width: 8.5%;
+  text-align: center;
+  cursor: pointer;
 }
+
+.boton-menu > p {
+  transform: skewX(25deg);
+  cursor: pointer;
+}
+
 
 .boton-menu:hover {
   background-color: #1B0024;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h2 {
   font-family: pattaya;
   font-size: 2vw;
   text-align: center;
-  margin: 12px;
+  padding-top: 4vh;
 }
 
+#testimonios > h2, #sobremi > h2 {
+  color: white;
+}
+
+
+#container-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.proj {
+  background-color: #C52283;
+  height: 35vh;
+  flex: 25%;
+  text-align: center;
+  margin: 2% 4%;
+  cursor: pointer;
+}
+
+.proj:hover {
+  background-color: #1B0024;
+}
+
+#container-testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.test {
+  background-color: white;
+  height: 35vh;
+  flex: 25%;
+  margin: 10% 2%;
+  cursor: pointer;
+}
+
+
+#sticky {
+  position: fixed;
+  top: 10px;
+}
+
+#menu-burger {
+  margin: 1vw;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.linea {
+  background-color: black;
+  width: 25px;
+  height: 5px;
+}
+
+
+/*                   TIMELINE                   */
+
+#container-timeline {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  /* border: solid black 3px; */
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 70vw;
+  max-height: 70vh;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #1B0024;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #1B0024;
+  top: 70px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50.3%;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgba(197,34,131,0.08);
+  position: relative;
+  border-radius: 12px;
+}
+
+.timeline p {
+  font-family: Miriam;
+  font-size: 1.25em;
+}
+
+.timeline p:nth-child(1) {
+  color: #C52283;
+}
+
+#container-aboutme {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+#foto {
+  background-color: #FF005C;
+  height: 50vh;
+  flex: 33%;
+  margin: 10% 5% 10% 10%;
+}
+
+#bio {
+  height: 50vh;
+  flex: 50%;
+  margin: 10% 10% 10% 5%;
+  color: white;
+  font-family: Miriam;
+}
+
+#bio h4 {
+  color:#FF005C;
+  font-size: 1.8em;
+  margin: 10% 2% 5%;
+}
+
+#bio p {
+  margin-top: 2vh;
+  font-size: 1.6em;
+  margin: 2%;
+
+}
+
+
+#container-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
 
 
 /* FORMULARIO */
 .contact_form {
-  width: 460px;
+  width: 25vw;
   height: auto;
-  margin: 80px auto;
+  margin: 20px 3vw;
   border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 2vh 1vw 2vh;
   background-color: #fbfbfb;
-  padding-left: 30px;
   border: solid #c52283 1px ;
 }
 
 
 form input {
   background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
+  width: 23vw;
+  height: 4vh;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: #c52283;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  padding-left: 0.5vw;
 }
 
 
 textarea{
   background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
+  width: 23vw;
+  height: 10vh;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: #c52283;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  resize: none;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  padding-left: 0.5vw;
 }
 
 
@@ -148,16 +380,13 @@ label{
 
 .formulario button{
   height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  font-family: Miriam;
   text-transform: uppercase;
   background-color: #c52283;
   border-color: #c52283;
   border-style: solid;
   border-radius: 10px;
-  width: 420px;
+  width: 23vw;
   cursor: pointer;
 }
 
@@ -182,6 +411,7 @@ label{
 .formulario p{
   font-size: 14px;
   color: #0e0e0e;
+  font-family: Miriam;
 }
 
 
@@ -197,30 +427,62 @@ label{
 
 .formulario input:focus{
   outline:0;
-  border: 1px solid #97d848;
+  border: 1px solid #6D53A5;
 }
 
 
 .formulario textarea:focus{
   outline:0;
-  border: 1px solid #97d848;
+  border: 1px solid #6D53A5;
 }
 
-#sticky {
-  position: sticky;
-  top: 10px;
-}
 
-#menu-burger {
-  margin: 1vw;
-  height: 25px;
-  width: 25px;
+#volver {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
-.linea {
-  background-color: black;
-  width: 25px;
-  height: 5px;
+
+#forma-triangulo {
+  clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+  margin: 0.5vh;
+  background-color: #C52283;
+  width: 1vw;
+  height: 2vh;
+}
+
+#boton-volver {
+  color: white;
+  width: 4vw;
+  height: 3vh;
+  font-family: Miriam;
+  text-transform: uppercase;
+  background-color: #c52283;
+  border-color: #c52283;
+  border-style: solid;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#boton-volver:active {
+  background-color: #1B0024;
+  border-color: #1B0024;
+}
+
+footer {
+  background-color: #1B0024;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  width: 10vw;
+}
+
+.icono-red-social {
+  margin: 2%;
 }

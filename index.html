@@ -7,27 +7,27 @@
   <title>Portafolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+
 </head>
 <body>
   <header></header>
   <main>
     <section id="inicio">
-      <div id="presentacion">
-        <div id="letrero" class="blanco">
-          <p id="nombre" class="pattaya">Sergio Chulián Mantel</p>
+      <div id="cuadro-morado">
+        <div id="letrero">
+          <p id="nombre" class="pattaya">Sergio Chulián</p>
           <p class="desarrollador livvic">DESARROLLADOR</p>
           <p class="desarrollador livvic">WEB Y MULTIPLATAFORMA</p>
           <div id="botones">
-            <button class="boton-menu pattaya blanco">Proyectos</button>
-            <button class="boton-menu pattaya blanco">Testimonios</button>
-            <button class="boton-menu pattaya blanco">CV</button>
-            <button class="boton-menu pattaya blanco">Sobre mí</button>
-            <button class="boton-menu pattaya blanco">Contacto</button>
+            <a class="boton-menu pattaya" href="#proyectos"><p>Proyectos</p></a>
+            <a class="boton-menu pattaya" href="#testimonios"><p>Testimonios</p></a>
+            <a class="boton-menu pattaya" href="#cv"><p>CV</p></a>
+            <a class="boton-menu pattaya" href="#sobremi"><p>Sobre mí</p></a>
+            <a class="boton-menu pattaya" href="#contacto"><p>Contacto</p></a>
           </div>
         </div>
       </div>
     </section>
-
     <div>
       <div id="sticky">
         <div id="menu-burger">
@@ -36,124 +36,144 @@
           <div class="linea"></div>
         </div>
       </div>
-        <section id="proyectos">
-      <div id="titulo-proyecto">
+      <section id="proyectos">
         <h2>Proyectos</h2>
-          <div id="titulo-proyecto">
-            <div class="proj"></div>
-            <div class="proj"></div>
-            <div class="proj"></div>
-            <div class="proj"></div>
-            <div class="proj"></div>
-            <div class="proj"></div>
-          </div>
+        <div id="container-proyectos">
+          <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div>
         </div>
       </section>
+
       <section id="testimonios">
-        <div>
-          <h2>Testimonios</h2>
+        <h2>Testimonios</h2>
+        <div id="container-testimonios">
+          <div class="test"></div>
+          <div class="test"></div>
+          <div class="test"></div>
         </div>
       </section>
+
       <section id="cv">
         <h2>CV</h2>
-        <div>
-          <p>2012 - 2016</p>
-          <p>Grado en biotecnología. UCA.</p>
-          <p>Tecnologías utilizadas: Microsoft Office, Matlab, Statgraphics.</p>
-        </div>
-        <div>
-          <p>2016 - 2017</p>
-          <p>Curso en Desarrollo de Videojuegos. Udemy.</p>
-          <p>Tecnologías utilizadas: Unity3D, C#.</p>
-          <p>B1 Cambridge English.</p>
-        </div>
-        <div>
-          <p>2018 - 2019</p>
-          <p>Diploma de Especialización en Análisis Bioinformático. UPO.</p>
-          <p>Tecnologías utilizadas: Perl, R, RStudio, Bash, Linux.</p>
-        </div>
-        <div>
-          <p>2020 - 2022</p>
-          <p>CFGS Desarrollo de Aplicaciones Web. IES Doñana.</p>
-          <p>Tecnologías utilizadas: HTML, CSS3, Javascript, Python, Java, PHP, Laravel, Tailwind</p>
-        </div>
-      </section>
-      <section id="sobremi">
-        <h2>Sobre mí</h2>
-        <div>
-          <div>
-            <p>Soy Sergio Chulián Mantel</p>
-          </div>
-          <div>
-            <p>Graduado en Biotecnología y enamorado de la programación.</p>
-            <p>Comencé en este mundo creando mis propios videojuegos hasta que decidí formarme como desarrollador web.</p>
-            <p>Entre mis características puedo destacar ser una persona muy analítica, responsable y original planteando soluciones.</p>
-          </div>
-        </div>
-  
-      </section>
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <div id="telefono-email">
-          <div id="telefono">
-            <div id="logo-telefono"></div>
-            <div><p>+34 678 02 98 25</p></div>
-          </div>
-          <div id="email">
-            <div id="logo-email"></div>
-            <div><p>sergio.chulian@iesdonana.org</p></div>
-          </div>
-        </div>
-  
-        <div>
-          <div class="contact_form">
-            <div class="formulario">
-              <form>
-                <p>
-                  <label for="form-nombre" class="colocar_nombre">Nombre</label>
-                  <input type="text" name="form-nombre" id="form-nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-  
-                <p>
-                  <label for="apellidos" class="colocar_apellidos">Apellidos</label>
-                  <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
-                </p>
-  
-                <p>
-                  <label for="email" class="colocar_email">Email</label>
-                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-  
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto</label>
-                  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>
-  
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje</label>
-                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-                </p>
-  
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-              </form>
+        <div id="container-timeline">
+          <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <p>2012 - 2016</p>
+                <p>Grado en biotecnología. UCA.</p>
+                <p>Tecnologías utilizadas: Microsoft Office, Matlab, Statgraphics.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <p>2016 - 2017</p>
+                <p>Curso en Desarrollo de Videojuegos. Udemy.</p>
+                <p>Tecnologías utilizadas: Unity3D, C#.</p>
+                <p>B1 Cambridge English.</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <p>2018 - 2019</p>
+                <p>Diploma de Especialización en Análisis Bioinformático. UPO.</p>
+                <p>Tecnologías utilizadas: Perl, R, RStudio, Bash, Linux.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <p>2020 - 2022</p>
+                <p>CFGS Desarrollo de Aplicaciones Web. IES Doñana.</p>
+                <p>Tecnologías utilizadas: HTML, CSS3, Javascript, Python, Java, PHP, Laravel, Tailwind</p>
+              </div>
             </div>
           </div>
         </div>
-        <div id="boton-volver">
+      </section>
+
+      <section id="sobremi">
+        <h2>Sobre mí</h2>
+        <div id="container-aboutme">
+          <div id="foto"></div>
+          <div id="bio">
+            <h4>Soy Sergio Chulián Mantel</h4>
+            <p>
+              Graduado en Biotecnología y enamorado de la programación.
+              Comencé en este mundo creando mis propios videojuegos hasta que decidí formarme como desarrollador web. <br><br>
+              Entre mis características puedo destacar ser una persona muy analítica, responsable y original planteando soluciones.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <div id="container-contacto">
+          <div id="telefono-email">
+            <div id="telefono">
+              <div id="logo-telefono"></div>
+              <div><p>+34 678 02 98 25</p></div>
+            </div>
+            <div id="email">
+              <div id="logo-email"></div>
+              <div><p>sergio.chulian@iesdonana.org</p></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="contact_form">
+              <div class="formulario">
+                <form>
+                  <p>
+                    <label for="form-nombre">Nombre</label>
+                    <input type="text" name="form-nombre" id="form-nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                  </p>
+
+                  <p>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
+                  </p>
+
+                  <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                  </p>
+
+                  <p>
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                  </p>
+
+                  <p>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                  </p>
+
+                  <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="volver">
           <div id="forma-triangulo"></div>
-          <button type="submit" name="volver" id="volver"><p>Volver</p></button>
+          <a href="#inicio"><button type="submit" name="volver" id="boton-volver"><p>Volver</p></button></a>
         </div>
       </section>
     </div>
-
   </main>
 
   <footer>
     <div>
-      <div class="icono-red-social"></div>
-      <div class="icono-red-social"></div>
-      <div class="icono-red-social"></div>
-      <div class="icono-red-social"></div>
+      <div class="icono-red-social"><a href="https://github.com/schuman94"><img src="./images/github.png"></a></div>
+      <div class="icono-red-social"><a href="https://www.linkedin.com/feed/"><img src="./images/linkedin.png"></a></div>
+      <div class="icono-red-social"><a href="https://www.facebook.com/"><img src="./images/facebook.png"></a></div>
+      <div class="icono-red-social"><a href="https://twitter.com/"><img src="./images/twitter.png"></a></div>
     </div>
   </footer>
 </body>
