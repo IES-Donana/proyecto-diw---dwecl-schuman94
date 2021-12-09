@@ -151,31 +151,33 @@
           <div>
             <div class="contact_form">
               <div class="formulario">
-                <form>
+                <form id="formulario-contacto" action="#" method="get"> 
                   <p>
                     <label for="form-nombre">Nombre</label>
-                    <input type="text" name="form-nombre" id="form-nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    <input type="text" name="form-nombre" id="form-nombre" maxlength="20" required placeholder="Escribe tu nombre">
                   </p>
 
                   <p>
                     <label for="apellidos">Apellidos</label>
-                    <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
+                    <input type="text" name="introducir_apellidos" id="apellidos" maxlength="20" required placeholder="Escribe tus apellidos">
                   </p>
 
                   <p>
                     <label for="email">Email</label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    <input type="text" name="introducir_email" id="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$" required title="Introduce un email correcto" placeholder="Escribe tu Email">
                   </p>
 
                   <p>
                     <label for="asunto">Asunto</label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    <input type="text" name="introducir_asunto" id="asunto" maxlength="20"  required placeholder="Escribe un asunto">
                   </p>
 
                   <p>
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
                   </p>
+
+                  <div id="mensaje-error"></div>
 
                   <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
                 </form>
