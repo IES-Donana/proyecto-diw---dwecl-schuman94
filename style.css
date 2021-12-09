@@ -19,9 +19,9 @@
   box-sizing: border-box;
 }
 
-body {
+/*body {
   overflow-x: hidden;
-}
+}*/
 
 .pattaya {
   font-family: Pattaya, sans-serif;
@@ -267,7 +267,7 @@ h2 {
 /* Place the container to the right */
 .right {
   left: 50.3%;
-  
+
 }
 
 
@@ -498,4 +498,13 @@ footer div {
 
 .icono-red-social {
   margin: 5%;
+}
+
+.titulo-section {
+  display: inline;
+}
+
+.menu-burger {
+float: right;
+padding: 1%;
 }
