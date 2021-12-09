@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .pattaya {
   font-family: Pattaya, sans-serif;
 }
@@ -177,7 +181,7 @@ h2 {
   background-color: white;
   height: 35vh;
   flex: 25%;
-  margin: 10% 2%;
+  margin: 10% 4%;
   cursor: pointer;
 }
 
@@ -196,7 +200,7 @@ h2 {
   align-items: center;
 }
 .linea {
-  background-color: black;
+  background-color:#FF005C;
   width: 25px;
   height: 5px;
 }
@@ -238,6 +242,7 @@ h2 {
   position: relative;
   background-color: inherit;
   width: 50%;
+  margin-right: -50vw;
 }
 
 /* The circles on the timeline */
@@ -262,6 +267,7 @@ h2 {
 /* Place the container to the right */
 .right {
   left: 50.3%;
+  
 }
 
 
@@ -354,6 +360,7 @@ form input {
   margin-top: 1vh;
   margin-bottom: 2vh;
   padding-left: 0.5vw;
+  font-family: Miriam;
 }
 
 
@@ -369,6 +376,8 @@ textarea{
   margin-top: 1vh;
   margin-bottom: 2vh;
   padding-left: 0.5vw;
+  padding-top: 0.5vh;
+  font-family: Miriam;
 }
 
 
@@ -390,6 +399,10 @@ label{
   cursor: pointer;
 }
 
+.formulario button:active {
+  background-color: #1B0024;
+  border-color: #1B0024;
+}
 
 .formulario button p{
   color: #fff;
@@ -484,5 +497,5 @@ footer div {
 }
 
 .icono-red-social {
-  margin: 2%;
+  margin: 5%;
 }
