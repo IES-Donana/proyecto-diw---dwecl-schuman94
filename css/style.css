@@ -1,16 +1,16 @@
 @font-face {
   font-family: Pattaya;
-  src: url(./fonts/Pattaya-Regular.ttf);
+  src: url(../fonts/Pattaya-Regular.ttf);
 }
 
 @font-face {
   font-family: Livvic;
-  src: url(./fonts/Livvic-Black.ttf);
+  src: url(../fonts/Livvic-Black.ttf);
 }
 
 @font-face {
   font-family: Miriam;
-  src: url(./fonts/MiriamLibre-Regular.ttf);
+  src: url(../fonts/MiriamLibre-Regular.ttf);
 }
 
 /* General */
@@ -66,18 +66,18 @@ section {
 
 
 #inicio {
-  background-image: url(./images/fondo1.jpg);
+  background-image: url(../images/fondo1.jpg);
   display: flex;
   align-items: center;
 }
 
 #testimonios {
-  background-image: url(./images/fondo2.jpg);
+  background-image: url(../images/fondo2.jpg);
   color: white;
 }
 
 #sobremi {
-  background-image: url(./images/fondo3.jpg);
+  background-image: url(../images/fondo3.jpg);
   color: white;
 }
 
