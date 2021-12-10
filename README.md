@@ -49,3 +49,6 @@ Las advertencias mostradas no son fallos, sino situaciones en donde se utilizan 
 Se ha validado el html con https://validator.w3.org/
 Se han corregido todos los errores, por lo que ya no presenta ninguno.
 Solo presenta una advertencia, la sección inicio no tiene un h2 al igual que el resto, no lo necesita por cuestiones de diseño.
+
+
+Se ha utilizado Tailwind para darle estilo a la sección de proyectos. La hoja de estilos sigue enlazada para poder darle los colores exactos de nuestra guia de estilos.
