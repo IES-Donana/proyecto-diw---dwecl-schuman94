@@ -45,3 +45,7 @@ Las advertencias mostradas no son fallos, sino situaciones en donde se utilizan 
 453	.formulario button:active	Colores iguales para background-color y border-color
 517	#boton-volver	Colores iguales para background-color y border-color
 525	#boton-volver:active	Colores iguales para background-color y border-color
+
+Se ha validado el html con https://validator.w3.org/
+Se han corregido todos los errores, por lo que ya no presenta ninguno.
+Solo presenta una advertencia, la sección inicio no tiene un h2 al igual que el resto, no lo necesita por cuestiones de diseño.
