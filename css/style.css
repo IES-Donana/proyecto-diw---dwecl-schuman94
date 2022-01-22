@@ -173,7 +173,7 @@ h2 {
 }
 
 .proj {
-  background-color: #C52283;
+  background-color: #000000;
   height: 35vh;
   flex: 25%;
   text-align: center;
@@ -181,11 +181,22 @@ h2 {
   cursor: pointer;
 }
 
+.img-proj {
+
+  position: absolute;
+}
+
+.img-proj picture {
+  filter: opacity(15%);
+}
+
 .resumen-proj{
   padding-top: 12vh;
   height: 35vh;
   font-size: 1.3em;
   color: #C52283;
+  z-index: 1;
+  position: absolute;
 }
 
 .resumen-proj:hover {
@@ -338,10 +349,13 @@ h2 {
 }
 
 #foto {
-  background-color: #FF005C;
-  height: 50vh;
+  height: 70vh;
   flex: 33%;
-  margin: 10% 5% 10% 10%;
+  margin: 15% 5% 10% 15%;
+}
+
+#logo {
+  height: 50vh;
 }
 
 #bio {
