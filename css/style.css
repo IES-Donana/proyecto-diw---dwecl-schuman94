@@ -179,15 +179,10 @@ h2 {
   text-align: center;
   margin: 2% 4%;
   cursor: pointer;
-}
-
-.img-proj {
-
-  position: absolute;
-}
-
-.img-proj picture {
-  filter: opacity(15%);
+  background-image: url(../images/proyecto-1-sm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .resumen-proj{
@@ -195,12 +190,14 @@ h2 {
   height: 35vh;
   font-size: 1.3em;
   color: #C52283;
-  z-index: 1;
-  position: absolute;
 }
 
-.resumen-proj:hover {
-  color: white;
+.a-proj {
+  visibility: hidden;
+}
+
+.a-proj:hover {
+  visibility: visible;
 }
 
 .proj:hover {
