@@ -56,6 +56,8 @@ a {
 }
 
 
+
+
 /* Secciones */
 
 
@@ -141,6 +143,7 @@ section {
   min-width: 8.5%;
   text-align: center;
   cursor: pointer;
+  transition: background-color 1s;
 }
 
 .boton-menu > p {
@@ -164,6 +167,17 @@ h2 {
 #testimonios > h2, #sobremi > h2 {
   color: white;
 }
+
+.enlacevisible {
+  transition: background-color 1s;
+  text-align: center;
+}
+
+.enlacevisible:hover {
+  background-color: #1B0024;
+}
+
+
 
 /*Seccion proyectos */
 
