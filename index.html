@@ -8,15 +8,22 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/form.js" defer></script>
   <script src="./js/burger.js" defer></script>
+  <script src="./js/logo.js" defer></script>
   <link rel="icon"
         type="image/ico"
         href="images/favicon.ico">
 </head>
 <body>
   <header id="navdiv">
-    <img src="./images/menu-oscuro.png" alt="alt" >
+    <picture>
+      <source media="(min-width: 400px)" srcset="./images/menu-oscuro.png">
+      <img src="./images/menu-oscuro.png" alt="Menu" >
+    </picture>
   </header>
   <main>
+    <button id="boton-logo">
+      <object id="logo" data="images/logotipo.svg"></object>
+    </button>
     <section id="inicio">
       <div id="cuadro-morado">
         <div id="letrero">
@@ -127,7 +134,7 @@
 
         <div id="container-aboutme">
           <div id="foto">
-            <img id="logo" src="images/logotipo.svg"></img>
+            <object id="logo-aboutme" data="./images/logotipo.svg"></object>
           </div>
 
           <div id="bio">
@@ -149,13 +156,19 @@
           <div id="telefono-email">
             <div id="telefono">
               <div id="logo-telefono">
-                <img src="./images/telefono.png" alt="alt">
+                <picture>
+                  <source media="(min-width: 400px)" srcset="./images/telefono.png">
+                  <img src="./images/telefono.png" alt="telefono">
+                </picture>
               </div>
               <div><p>+34 678 02 98 25</p></div>
             </div>
             <div id="correo">
               <div id="logo-email">
-                <img src="./images/correo.png" alt="alt">
+                <picture>
+                  <source media="(min-width: 400px)" srcset="./images/correo.png">
+                  <img src="./images/correo.png" alt="correo">
+                </picture>
               </div>
               <div><p>sergio.chulian@iesdonana.org</p></div>
             </div>
@@ -197,7 +210,12 @@
               </div>
             </div>
           </div>
-
+          <div>
+            <details id="details-logo">
+              <summary>Logo</summary>
+              <img id="logo-gif" src="./images/animacion.gif" alt="logo">
+            </details>
+          </div>
         </div>
 
         <div id="volver">
