@@ -1,4 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6420638&assignment_repo_type=AssignmentRepo)
 # Proyecto DIW - DWECL
 
 ## ÍNDICE
@@ -28,25 +27,8 @@ Nota: La página proyectos indicada en el mapa de navegación de la entrega ante
 No debería haberse indicado como tal.
 
 ## RECURSOS<a name="id4"></a>
-[Listado de recursos usados]
-
 - Can I use?: https://caniuse.com/
 - Bootstrap: https://getbootstrap.com/
 - Tailwind: https://tailwindcss.com/docs
 - W3C CSS Validator: https://jigsaw.w3.org/css-validator/
 - W3C HTML Validator: https://validator.w3.org/
-
-
-Se ha validado el css con https://jigsaw.w3.org/css-validator/
-No hay errores.
-
-Las advertencias mostradas no son fallos, sino situaciones en donde se utilizan los mismos colores de forma intencionada:
-
-444	.formulario button	Colores iguales para background-color y border-color
-453	.formulario button:active	Colores iguales para background-color y border-color
-517	#boton-volver	Colores iguales para background-color y border-color
-525	#boton-volver:active	Colores iguales para background-color y border-color
-
-Se ha validado el html con https://validator.w3.org/
-Se han corregido todos los errores, por lo que ya no presenta ninguno.
-Solo presenta una advertencia, la sección inicio no tiene un h2 al igual que el resto, no lo necesita por cuestiones de diseño.

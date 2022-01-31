@@ -8,13 +8,54 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/form.js" defer></script>
   <script src="./js/burger.js" defer></script>
-
+  <script src="./js/logo.js" defer></script>
+  <link rel="icon"
+        type="image/ico"
+        href="images/favicon.ico">
 </head>
 <body>
+  <audio autoplay loop>
+    <source src="./audio/bk-sound.ogg" type="audio/ogg">
+    <source src="./audio/bk-sound.mp3" type="audio/mpeg">
+    El navegador no soporta el audio
+  </audio>
   <header id="navdiv">
-    <img src="./images/menu-oscuro.png" alt="alt" >
+    <picture>
+      <source media="(min-width: 400px)" srcset="./images/menu-oscuro.png">
+      <img src="./images/menu-oscuro.png" alt="Menu" >
+    </picture>
   </header>
+  <div id="contenedor-video-bg">
+    <video id="video-bg" src="./video/videfondo900.mp4" autoplay loop muted></video>
+  </div>
   <main>
+    <!--Logo y modal-->
+    <object id="logo" data="images/logotipo.svg"></object>
+    <dialog id="modal">
+      <div id="contacto-modal">
+        <div id="telefono">
+          <div id="logo-telefono">
+            <picture>
+              <source media="(min-width: 400px)" srcset="./images/telefono.png">
+              <img src="./images/telefono.png" alt="telefono">
+            </picture>
+          </div>
+          <div><p>+34 678 02 98 25</p></div>
+        </div>
+        <div id="correo">
+          <div id="logo-email">
+            <picture>
+              <source media="(min-width: 400px)" srcset="./images/correo.png">
+              <img src="./images/correo.png" alt="correo">
+            </picture>
+          </div>
+          <div><p>sergio.chulian@iesdonana.org</p></div>
+        </div>
+        <button id="ok">OK</button>
+      </div>
+    </dialog>
+
+
     <section id="inicio">
       <div id="cuadro-morado">
         <div id="letrero">
@@ -46,12 +87,24 @@
         <h2>Proyectos</h2>
 
         <div id="container-proyectos">
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
+          <div id="proj1" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
+          </div>
+          <div id="proj2" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
+          </div>
+          <div id="proj3" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
+          </div>
+          <div id="proj4" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
+          </div>
+          <div id="proj5" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
+          </div>
+          <div id="proj6" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
+          </div>
         </div>
 
       </section>
@@ -61,8 +114,15 @@
         <h2>Testimonios</h2>
 
         <div id="container-testimonios">
-          <div class="test"></div>
-          <div class="test"></div>
+          <picture id="img-testimonios">
+            <source media="(min-width: 1200px)" srcset="./images/img-testimonios.jpg">
+            <source media="(min-width: 900px)" srcset="./images/img-testimonios-sm.jpg">
+            <img src="./images/img-testimonios-smm.jpg" alt="No disponible">
+          </picture>
+          <video id="video-testimonios" controls preload="none" loop poster="images/poster-testimonio.png">
+            <source src="./video/testimonio.mp4" type="video/mp4">
+            <source src="./video/testimonio.ogv" type="video/ogg; codecs='theora, vorbis'">
+          </video>
           <div class="test"></div>
         </div>
 
@@ -112,7 +172,9 @@
         <h2>Sobre mí</h2>
 
         <div id="container-aboutme">
-          <div id="foto"></div>
+          <div id="foto">
+            <object id="logo-aboutme" data="./images/logotipo.svg"></object>
+          </div>
 
           <div id="bio">
             <h4>Soy Sergio Chulián Mantel</h4>
@@ -133,13 +195,19 @@
           <div id="telefono-email">
             <div id="telefono">
               <div id="logo-telefono">
-                <img src="./images/telefono.png" alt="alt">
+                <picture>
+                  <source media="(min-width: 400px)" srcset="./images/telefono.png">
+                  <img src="./images/telefono.png" alt="telefono">
+                </picture>
               </div>
               <div><p>+34 678 02 98 25</p></div>
             </div>
             <div id="correo">
               <div id="logo-email">
-                <img src="./images/correo.png" alt="alt">
+                <picture>
+                  <source media="(min-width: 400px)" srcset="./images/correo.png">
+                  <img src="./images/correo.png" alt="correo">
+                </picture>
               </div>
               <div><p>sergio.chulian@iesdonana.org</p></div>
             </div>
@@ -181,7 +249,12 @@
               </div>
             </div>
           </div>
-
+          <div>
+            <details id="details-logo">
+              <summary>Logo</summary>
+              <img id="logo-gif" src="./images/animacion.gif" alt="logo">
+            </details>
+          </div>
         </div>
 
         <div id="volver">
