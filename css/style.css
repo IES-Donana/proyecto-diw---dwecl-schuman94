@@ -118,6 +118,11 @@ section {
   padding-top: 1%;
   font-size: 2.5vw;
   font-family: Pattaya, sans-serif;
+  cursor: pointer;
+}
+
+#nombre:hover {
+  text-shadow: 0.1em 0.05em 0.1em rgb(30, 30, 30);
 }
 
 .desarrollador {
@@ -186,17 +191,33 @@ h2 {
   flex-wrap: wrap;
 }
 
+#proj1, #proj2, #proj3 {
+  background-image: url(../images/proyecto-1-sm.jpg);
+}
+
+#proj4, #proj5, #proj6 {
+  background-image: url(../images/proyecto-2-sm.jpg);
+}
+
 .proj {
-  background-color: #000000;
   height: 35vh;
   flex: 25%;
   text-align: center;
   margin: 2% 4%;
   cursor: pointer;
-  background-image: url(../images/proyecto-1-sm.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (max-width:700px){
+  .proj {
+    flex: 100%
+  }
+
+  #proyectos {
+    height: auto;
+  }
 }
 
 .resumen-proj{
@@ -215,24 +236,39 @@ h2 {
 }
 
 .proj:hover {
-  background-color: #1B0024;
+  background-image: url(../images/proyecto-1-sm-oscuro.jpg);
+
+}
+
+#proj1:hover, #proj2:hover, #proj3:hover {
+  background-image: url(../images/proyecto-1-sm-oscuro.jpg);
+}
+
+#proj4:hover, #proj5:hover, #proj6:hover {
+  background-image: url(../images/proyecto-2-sm-oscuro.jpg);
 }
 
 /*Seccion testimonios */
+
+#testimonios {
+  height: auto;
+}
+
 #container-testimonios {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
 }
 
-.test {
-  background-color: white;
-  height: 35vh;
-  flex: 25%;
-  margin: 10% 4%;
-  cursor: pointer;
+#img-testimonios {
+  width: auto;
+  margin-top: 2%;
 }
 
+#video-testimonios {
+  width: 70vw;
+  margin: 2%
+}
 
 #sticky {
   position: fixed;
@@ -248,6 +284,10 @@ h2 {
 
 
 /*                   TIMELINE                   */
+
+#cv {
+  height: auto;
+}
 
 .content {
   padding: 20px 30px;
@@ -672,10 +712,6 @@ header {
   to {opacity: 100;}
 }
 
-#contenedor-logo {
-  cursor: pointer;
-}
-
 #logo{
   height: 10vh;
   position: absolute;
@@ -684,6 +720,7 @@ header {
   animation-name: aparicion-logo;
   animation-duration: 3s;
   animation-iteration-count: 1;
+  cursor: pointer;
 }
 
 @media screen and (min-height:900px){
@@ -715,4 +752,31 @@ header {
 
 summary::marker {
   content: "";
+}
+
+dialog {
+  border: none;
+  min-width: 25vw;
+  font-size: 1em;
+}
+
+dialog[open] {
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+}
+
+@media screen and (min-width:1600px){
+  dialog{
+    min-width: 15vw;
+  }
+}
+
+dialog::backdrop {
+  background: linear-gradient(90deg, #c522848f, #1b002494);
+  mix-blend-mode:lighten;
+}
+
+#contacto-modal{
+  padding: 5%;
 }

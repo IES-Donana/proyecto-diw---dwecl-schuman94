@@ -14,6 +14,11 @@
         href="images/favicon.ico">
 </head>
 <body>
+  <audio autoplay loop>
+    <source src="./audio/bk-sound.ogg" type="audio/ogg">
+    <source src="./audio/bk-sound.mp3" type="audio/mpeg">
+    El navegador no soporta el audio
+  </audio>
   <header id="navdiv">
     <picture>
       <source media="(min-width: 400px)" srcset="./images/menu-oscuro.png">
@@ -21,9 +26,33 @@
     </picture>
   </header>
   <main>
-    <button id="boton-logo">
-      <object id="logo" data="images/logotipo.svg"></object>
-    </button>
+    <!--Logo y modal-->
+    <object id="logo" data="images/logotipo.svg"></object>
+    <dialog id="modal">
+      <div id="contacto-modal">
+        <div id="telefono">
+          <div id="logo-telefono">
+            <picture>
+              <source media="(min-width: 400px)" srcset="./images/telefono.png">
+              <img src="./images/telefono.png" alt="telefono">
+            </picture>
+          </div>
+          <div><p>+34 678 02 98 25</p></div>
+        </div>
+        <div id="correo">
+          <div id="logo-email">
+            <picture>
+              <source media="(min-width: 400px)" srcset="./images/correo.png">
+              <img src="./images/correo.png" alt="correo">
+            </picture>
+          </div>
+          <div><p>sergio.chulian@iesdonana.org</p></div>
+        </div>
+        <button id="ok">OK</button>
+      </div>
+    </dialog>
+
+
     <section id="inicio">
       <div id="cuadro-morado">
         <div id="letrero">
@@ -55,23 +84,23 @@
         <h2>Proyectos</h2>
 
         <div id="container-proyectos">
-          <div class="proj"><a class="a-proj" href="https://pomofocus.io/">
-            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a>
+          <div id="proj1" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
           </div>
-          <div class="proj"><a class="a-proj" href="https://pomofocus.io/">
-            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a>
+          <div id="proj2" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
           </div>
-          <div class="proj"><a class="a-proj" href="https://pomofocus.io/">
-            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a>
+          <div id="proj3" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
           </div>
-          <div class="proj"><a class="a-proj" href="https://pomofocus.io/">
-            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a>
+          <div id="proj4" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
           </div>
-          <div class="proj"><a class="a-proj" href="https://pomofocus.io/">
-            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a>
+          <div id="proj5" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
           </div>
-          <div class="proj"><a class="a-proj" href="https://pomofocus.io/">
-            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a>
+          <div id="proj6" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
           </div>
         </div>
 
@@ -82,8 +111,15 @@
         <h2>Testimonios</h2>
 
         <div id="container-testimonios">
-          <div class="test"></div>
-          <div class="test"></div>
+          <picture id="img-testimonios">
+            <source media="(min-width: 1200px)" srcset="./images/img-testimonios.jpg">
+            <source media="(min-width: 900px)" srcset="./images/img-testimonios-sm.jpg">
+            <img src="./images/img-testimonios-smm.jpg" alt="No disponible">
+          </picture>
+          <video id="video-testimonios" controls preload="none" loop poster="images/poster-testimonio.png">
+            <source src="./video/testimonio.mp4" type="video/mp4">
+            <source src="./video/testimonio.ogv" type="video/ogg; codecs='theora, vorbis'">
+          </video>
           <div class="test"></div>
         </div>
 
