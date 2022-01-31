@@ -68,7 +68,7 @@ section {
 
 
 #inicio {
-  background-image: url(../images/fondo1.jpg);
+  /*background-image: url(../images/fondo1.jpg);*/
   display: flex;
   align-items: center;
 }
@@ -779,4 +779,12 @@ dialog::backdrop {
 
 #contacto-modal{
   padding: 5%;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
 }
