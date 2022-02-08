@@ -119,6 +119,8 @@ section {
   font-size: 2.5vw;
   font-family: Pattaya, sans-serif;
   cursor: pointer;
+  text-align: left;
+  font-weight: normal;
 }
 
 #nombre:hover {
@@ -129,6 +131,8 @@ section {
   margin-left: 2%;
   font-size: 5vw;
   text-shadow: 0.1em 0.05em 0.1em rgb(30, 30, 30);
+  text-align: left;
+  padding: 0%;
 }
 
 #botones {
@@ -225,7 +229,7 @@ h2 {
   padding-top: 12vh;
   height: 35vh;
   font-size: 1.3em;
-  color: rgb(255, 217, 0);
+  color: white;
 }
 
 .a-proj {
