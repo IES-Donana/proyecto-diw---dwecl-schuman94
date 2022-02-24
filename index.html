@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/form.js" defer></script>
+  <script src="./js/burger.js" defer></script>
+  <script src="./js/logo.js" defer></script>
+  <link rel="icon"
+        type="image/ico"
+        href="images/favicon.ico">
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="./audio/bk-sound.ogg" type="audio/ogg">
+    <source src="./audio/bk-sound.mp3" type="audio/mpeg">
+    El navegador no soporta el audio
+  </audio>
+  <header id="navdiv">
+    <picture>
+      <source media="(min-width: 400px)" srcset="./images/menu-oscuro.png">
+      <img src="./images/menu-oscuro.png" alt="Menu desplegable" >
+    </picture>
+  </header>
+  <div id="contenedor-video-bg">
+    <video id="video-bg" src="./video/videfondo900.mp4" autoplay loop muted></video>
+  </div>
+  <main>
+    <!--Logo y modal-->
+    <img id="logo" src="images/logotipo.svg" alt=""></img>
+    <dialog id="modal">
+      <div id="contacto-modal">
+        <div id="telefono-modal">
+          <div id="logo-telefono-modañ">
+            <picture>
+              <source media="(min-width: 400px)" srcset="./images/telefono.png">
+              <img src="./images/telefono.png" alt="">
+            </picture>
+          </div>
+          <div><p>+34 678 02 98 25</p></div>
+        </div>
+        <div id="correo-modal">
+          <div id="logo-email-modal">
+            <picture>
+              <source media="(min-width: 400px)" srcset="./images/correo.png">
+              <img src="./images/correo.png" alt="">
+            </picture>
+          </div>
+          <div><p>sergio.chulian@iesdonana.org</p></div>
+        </div>
+        <button id="ok">OK</button>
+      </div>
+    </dialog>
+
+
+    <section id="inicio">
+      <div id="cuadro-morado">
+        <div id="letrero">
+          <h1>
+            <span id="nombre" class="pattaya">Sergio Chulián</span>
+            <br>
+            <span class="desarrollador livvic">DESARROLLADOR</span>
+            <br>
+            <span class="desarrollador livvic">WEB Y MULTIPLATAFORMA</span>
+          </h1>
+
+          <div id="botones">
+            <a class="boton-menu pattaya" href="#proyectos"><p>Proyectos</p></a>
+            <a class="boton-menu pattaya" href="#testimonios"><p>Testimonios</p></a>
+            <a class="boton-menu pattaya" href="#cv"><p>CV</p></a>
+            <a class="boton-menu pattaya" href="#sobremi"><p>Sobre mí</p></a>
+            <a class="boton-menu pattaya" href="#contacto"><p>Contacto</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <!--
+        <div id="sticky">
+          <div id="menu-burger">
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+          </div>
+        </div>
+      -->
+      <section id="proyectos" >
+
+        <h2>Proyectos</h2>
+
+        <div id="container-proyectos">
+          <div id="proj1" class="proj"><a class="a-proj" href="https://pomofocus.io/">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
+          </div>
+          <div id="proj2" class="proj"><a class="a-proj" href="https://pomofocus.io/2">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
+          </div>
+          <div id="proj3" class="proj"><a class="a-proj" href="https://pomofocus.io/3">
+            <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div></a>
+          </div>
+          <div id="proj4" class="proj"><a class="a-proj" href="https://pomofocus.io/4">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
+          </div>
+          <div id="proj5" class="proj"><a class="a-proj" href="https://pomofocus.io/5">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
+          </div>
+          <div id="proj6" class="proj"><a class="a-proj" href="https://pomofocus.io/6">
+            <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div></a>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="testimonios">
+
+        <h2>Testimonios</h2>
+
+        <div id="container-testimonios">
+          <picture id="img-testimonios">
+            <source media="(min-width: 1200px)" srcset="./images/img-testimonios.jpg">
+            <source media="(min-width: 900px)" srcset="./images/img-testimonios-sm.jpg">
+            <img src="./images/img-testimonios-smm.jpg" alt="Imagen con testimonios de diferentes personas">
+          </picture>
+          <video id="video-testimonios" controls preload="none" loop poster="images/poster-testimonio.png">
+            <source src="./video/testimonio.mp4" type="video/mp4">
+            <source src="./video/testimonio.ogv" type="video/ogg; codecs='theora, vorbis'">
+          </video>
+          <div class="test"></div>
+        </div>
+
+      </section>
+
+      <section id="cv">
+
+        <h2>CV</h2>
+
+        <div id="container-timeline">
+          <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <p>2012 - 2016</p>
+                <p>Grado en biotecnología. UCA.</p>
+                <p>Tecnologías utilizadas: Microsoft Office, Matlab, Statgraphics.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <p>2016 - 2017</p>
+                <p>Curso en Desarrollo de Videojuegos. Udemy.</p>
+                <p>Tecnologías utilizadas: Unity3D, C#.</p>
+                <p>B1 Cambridge English.</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <p>2018 - 2019</p>
+                <p>Diploma de Especialización en Análisis Bioinformático. UPO.</p>
+                <p>Tecnologías utilizadas: Perl, R, RStudio, Bash, Linux.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <p>2020 - 2022</p>
+                <p>CFGS Desarrollo de Aplicaciones Web. IES Doñana.</p>
+                <p>Tecnologías utilizadas: HTML, CSS3, Javascript, Python, Java, PHP, Laravel, Tailwind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="sobremi">
+        <h2>Sobre mí</h2>
+
+        <div id="container-aboutme">
+          <div id="foto">
+            <img id="logo-aboutme" src="./images/logotipo.svg" alt=""></img>
+          </div>
+
+          <div id="bio">
+            <h3>Soy Sergio Chulián Mantel</h3>
+            <p>
+              Graduado en Biotecnología y enamorado de la programación.
+              Comencé en este mundo creando mis propios videojuegos hasta que decidí formarme como desarrollador web. <br><br>
+              Entre mis características puedo destacar ser una persona muy analítica, responsable y original planteando soluciones.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="contacto">
+
+        <h2>Contacto</h2>
+        <div id="container-contacto">
+          <div id="telefono-email">
+            <div id="telefono">
+              <div id="logo-telefono">
+                <picture>
+                  <source media="(min-width: 400px)" srcset="./images/telefono.png">
+                  <img src="./images/telefono.png" alt="">
+                </picture>
+              </div>
+              <div><p>+34 678 02 98 25</p></div>
+            </div>
+            <div id="correo">
+              <div id="logo-email">
+                <picture>
+                  <source media="(min-width: 400px)" srcset="./images/correo.png">
+                  <img src="./images/correo.png" alt="">
+                </picture>
+              </div>
+              <div><p>sergio.chulian@iesdonana.org</p></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="contact_form">
+              <div class="formulario">
+                <form id="formulario-contacto" action="#" method="get">
+                  <p>
+                    <label for="form-nombre">Nombre</label>
+                    <input type="text" name="form-nombre" id="form-nombre" maxlength="20" required placeholder="Escribe tu nombre">
+                  </p>
+
+                  <p>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="introducir_apellidos" id="apellidos" maxlength="20" required placeholder="Escribe tus apellidos">
+                  </p>
+
+                  <p>
+                    <label for="email">Email</label>
+                    <input type="text" name="introducir_email" id="email" pattern="^\w+@\w+\.\w+$" required title="Introduce un email correcto" placeholder="Escribe tu Email">
+                  </p>
+
+                  <p>
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="introducir_asunto" id="asunto" maxlength="20"  required placeholder="Escribe un asunto">
+                  </p>
+
+                  <p>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+                  </p>
+
+                  <div id="mensaje-error"></div>
+
+                  <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div>
+            <details id="details-logo">
+              <summary>Logo</summary>
+              <img id="logo-gif" src="./images/animacion.gif" alt="logo animado">
+            </details>
+          </div>
+        </div>
+
+        <div id="volver">
+          <div id="forma-triangulo"></div>
+          <a href="#inicio"><div id="boton-volver">Volver</div></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <div class="icono-red-social"><a href="https://github.com/schuman94"><img src="./images/github.png" alt="Enlace a mi Github"></a></div>
+      <div class="icono-red-social"><a href="https://www.linkedin.com/feed/"><img src="./images/linkedin.png" alt="Enlace a mi Linkedin"></a></div>
+      <div class="icono-red-social"><a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Enlace a mi Facebook"></a></div>
+      <div class="icono-red-social"><a href="https://twitter.com/"><img src="./images/twitter.png" alt="Enlace a mi Twitter"></a></div>
+    </div>
+  </footer>
+</body>
+</html>
