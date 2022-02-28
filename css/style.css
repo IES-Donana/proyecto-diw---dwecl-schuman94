@@ -437,9 +437,14 @@ h2 {
   display: flex;
 }
 
+/*
 #telefono-email p {
   margin-left: 5%;
   padding-top: 3%;
+}
+*/
+#logo-email, #logo-telefono {
+  margin-right: 1%;
 }
 
 #telefono p {
@@ -576,8 +581,8 @@ label{
 
 #boton-volver {
   color: white;
-  width: 4vw;
-  height: 3vh;
+  width: 6vw;
+  height: 4vh;
   font-family: Miriam;
   text-transform: uppercase;
   background-color: #c52283;
@@ -596,16 +601,23 @@ label{
 
 footer {
   background-color: #1B0024;
-  height: 8vh;
+  height: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-footer div {
+#redes {
   display: flex;
-  justify-content: center;
-  width: 10vw;
+  justify-content:center;
+  width: 15vw;
+  margin-left: 7%;
+}
+#actualizacion, #copy {
+  font-size: small;
+  margin-right: 2%;
+  justify-content:center;
+  color: #fff;
 }
 
 .icono-red-social {
@@ -639,9 +651,22 @@ header {
   position: fixed;
   right: 4vw;
   top: 2vw;
+  display: flex;
   animation-name: aparicion-burger;
   animation-duration: 1s;
   animation-iteration-count: 1;
+}
+
+
+#buscador {
+  display: flex;
+  margin-right: 10%;
+}
+
+#busqueda {
+  margin-top: 5%;
+  height: 60%;
+  justify-content: center;
 }
 /* /// */
 
@@ -697,7 +722,7 @@ header {
   }
 
   #boton-volver {
-    width: 6vw;
+    width: 30vw;
   }
 
   #foto {

@@ -72,7 +72,13 @@ let navmenu = document.getElementsByClassName("navham");
     crea.classList.add("divvisible");
     crea.setAttribute("id", "fuera" );
 
+    let enlace0 = document.createElement("a");
+    enlace0.setAttribute("href", "#inicio" );
+    enlace0.classList.add("enlacevisible");
+    enlace0.textContent = "Inicio";
+    crea.appendChild(enlace0);
 
+    enlace0.addEventListener('click', cerrar);
 
     let enlace1 = document.createElement("a");
     enlace1.setAttribute("href", "#proyectos" );
