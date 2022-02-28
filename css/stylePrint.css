@@ -178,7 +178,6 @@ footer {
 #copy, #actualizacion {
     color: black;
     margin: 1% 2.5%;
-    font-size: medium;
 }
 
 #redes {
@@ -199,3 +198,7 @@ footer {
     content: attr(href);
     font-size:medium;
 }
+
+.breadcrumb {
+    display: none;
+  }
