@@ -175,7 +175,7 @@ footer {
     page-break-before: avoid;
 }
 
-#copy, #actualizacion {
+#datosFooter {
     color: black;
     margin: 1% 2.5%;
 }

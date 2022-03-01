@@ -613,11 +613,11 @@ footer {
   display: flex;
   justify-content:center;
   width: 15vw;
-  margin-left: 7%;
+  margin-left: 6%;
 }
-#actualizacion, #copy {
+#datosFooter {
   font-size: medium;
-  margin-right: 2%;
+  margin-right: 1%;
   justify-content:center;
   color: #fff;
 }
@@ -868,7 +868,7 @@ ul li a:hover {
     margin-left: 15%;
   }
 
-  #actualizacion, #copy {
+  #datosFooter{
     margin-left: 5%;
   }
 
@@ -934,4 +934,9 @@ ul li a:hover {
   #nombre {
     font-size: large;
   }
+}
+
+#validaciones {
+  display: flex;
+  margin-right: 1%;
 }
