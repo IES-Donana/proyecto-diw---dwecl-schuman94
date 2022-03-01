@@ -1,26 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
+  <title>Portafolio Sergio Chulián</title>
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/form.js" defer></script>
   <script src="./js/burger.js" defer></script>
-
+  <script src="./js/logo.js" defer></script>
+  <link rel="icon"
+        type="image/ico"
+        href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./css/stylePrint.css" media="print">
 </head>
 <body>
-  <header id="navdiv">
-    <img src="./images/menu-oscuro.png" alt="alt" >
+  <audio autoplay loop>
+    <source src="./audio/bk-sound.ogg" type="audio/ogg">
+    <source src="./audio/bk-sound.mp3" type="audio/mpeg">
+    El navegador no soporta el audio
+  </audio>
+  <header>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ul>
+        <li>Inicio</li>
+        <li>Primera sección</li>
+      </ul>
+    </nav>
+
+    <div id="buscador">
+      <label for="busqueda"></label>
+      <input type="text" id="busqueda" name="busqueda" placeholder="buscar">
+    </div>
+
+    <div id="navdiv">
+      <picture>
+        <source media="(min-width: 400px)" srcset="./images/menu-oscuro.png">
+        <img src="./images/menu-oscuro.png" alt="Menu desplegable" >
+      </picture>
+    </div>
+
   </header>
+  <div id="contenedor-video-bg">
+    <video id="video-bg" src="./video/videfondo900.mp4" autoplay loop muted></video>
+  </div>
   <main>
+    <!--Logo y modal-->
+    <img id="logo" src="images/logotipo.svg" alt="">
+    <dialog id="modal">
+      <div id="contacto-modal">
+        <div id="telefono-modal">
+          <div id="logo-telefono-modañ">
+            <picture>
+              <source media="(min-width: 400px)" srcset="./images/telefono.png">
+              <img src="./images/telefono.png" alt="">
+            </picture>
+          </div>
+          <div><p>+34 678 02 98 25</p></div>
+        </div>
+        <div id="correo-modal">
+          <div id="logo-email-modal">
+            <picture>
+              <source media="(min-width: 400px)" srcset="./images/correo.png">
+              <img src="./images/correo.png" alt="">
+            </picture>
+          </div>
+          <div><p>sergio.chulian@iesdonana.org</p></div>
+        </div>
+        <button id="ok">OK</button>
+      </div>
+    </dialog>
+
+
     <section id="inicio">
       <div id="cuadro-morado">
         <div id="letrero">
-          <p id="nombre" class="pattaya">Sergio Chulián</p>
-          <p class="desarrollador livvic">DESARROLLADOR</p>
-          <p class="desarrollador livvic">WEB Y MULTIPLATAFORMA</p>
+          <h1>
+            <span id="nombre" class="pattaya">Sergio Chulián</span>
+            <br>
+            <span class="desarrollador livvic">DESARROLLADOR</span>
+            <br>
+            <span class="desarrollador livvic">WEB Y MULTIPLATAFORMA</span>
+          </h1>
+
           <div id="botones">
             <a class="boton-menu pattaya" href="#proyectos"><p>Proyectos</p></a>
             <a class="boton-menu pattaya" href="#testimonios"><p>Testimonios</p></a>
@@ -43,26 +105,77 @@
       -->
       <section id="proyectos" >
 
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>Proyectos</li>
+          </ul>
+        </nav>
         <h2>Proyectos</h2>
 
         <div id="container-proyectos">
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
-          <div class="proj"><a href="https://pomofocus.io/"><div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad</p></div></a></div>
+
+          <div id="proj1" class="proj">
+            <a class="a-proj" href="https://pomofocus.io/">
+              <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div>
+            </a>
+          </div>
+
+          <div id="proj2" class="proj">
+            <a class="a-proj" href="https://pomofocus.io/2">
+              <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div>
+            </a>
+          </div>
+
+          <div id="proj3" class="proj">
+            <a class="a-proj" href="https://pomofocus.io/3">
+              <div class="resumen-proj"><p>Pomodoro</p><p>Se trata de una aplicación web de productividad.</p></div>
+            </a>
+          </div>
+
+          <div id="proj4" class="proj">
+            <a class="a-proj" href="https://pomofocus.io/4">
+              <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div>
+            </a>
+          </div>
+
+          <div id="proj5" class="proj">
+            <a class="a-proj" href="https://pomofocus.io/5">
+              <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div>
+            </a>
+          </div>
+
+          <div id="proj6" class="proj">
+            <a class="a-proj" href="https://pomofocus.io/6">
+              <div class="resumen-proj"><p>Go Down!</p><p>Videojuego arcade para Android. Creado con Unity3d.</p></div>
+            </a>
+          </div>
+
         </div>
 
       </section>
 
       <section id="testimonios">
 
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>Testimonios</li>
+          </ul>
+        </nav>
         <h2>Testimonios</h2>
 
         <div id="container-testimonios">
-          <div class="test"></div>
-          <div class="test"></div>
+          <picture id="img-testimonios">
+            <source media="screen and (min-width: 1900px)" srcset="./images/img-testimonios.jpg">
+            <source media="screen and (min-width: 900px)" srcset="./images/img-testimonios-sm.jpg">
+            <img src="./images/img-testimonios-smm.jpg" alt="Imagen con testimonios de diferentes personas">
+          </picture>
+
+          <video id="video-testimonios" controls preload="none" loop poster="images/poster-testimonio.png">
+            <source src="./video/testimonio.mp4" type="video/mp4">
+            <source src="./video/testimonio.ogv" type="video/ogv">
+          </video>
           <div class="test"></div>
         </div>
 
@@ -70,6 +183,12 @@
 
       <section id="cv">
 
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>CV</li>
+          </ul>
+        </nav>
         <h2>CV</h2>
 
         <div id="container-timeline">
@@ -109,13 +228,21 @@
       </section>
 
       <section id="sobremi">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>Sobre mi</li>
+          </ul>
+        </nav>
         <h2>Sobre mí</h2>
 
         <div id="container-aboutme">
-          <div id="foto"></div>
+          <div id="foto">
+            <img id="logo-aboutme" src="./images/logotipo.svg" alt="">
+          </div>
 
           <div id="bio">
-            <h4>Soy Sergio Chulián Mantel</h4>
+            <h3>Soy Sergio Chulián Mantel</h3>
             <p>
               Graduado en Biotecnología y enamorado de la programación.
               Comencé en este mundo creando mis propios videojuegos hasta que decidí formarme como desarrollador web. <br><br>
@@ -128,18 +255,31 @@
 
       <section id="contacto">
 
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>Contacto</li>
+          </ul>
+        </nav>
         <h2>Contacto</h2>
+
         <div id="container-contacto">
           <div id="telefono-email">
             <div id="telefono">
               <div id="logo-telefono">
-                <img src="./images/telefono.png" alt="alt">
+                <picture>
+                  <source media="(min-width: 400px)" srcset="./images/telefono.png">
+                  <img src="./images/telefono.png" alt="">
+                </picture>
               </div>
-              <div><p>+34 678 02 98 25</p></div>
+              <div><span>+34 678 02 98 25</span></div>
             </div>
             <div id="correo">
               <div id="logo-email">
-                <img src="./images/correo.png" alt="alt">
+                <picture>
+                  <source media="(min-width: 400px)" srcset="./images/correo.png">
+                  <img src="./images/correo.png" alt="">
+                </picture>
               </div>
               <div><p>sergio.chulian@iesdonana.org</p></div>
             </div>
@@ -181,23 +321,54 @@
               </div>
             </div>
           </div>
-
+          <div>
+            <details id="details-logo">
+              <summary>Logo</summary>
+              <img id="logo-gif" src="./images/animacion.gif" alt="logo animado">
+            </details>
+          </div>
         </div>
 
         <div id="volver">
           <div id="forma-triangulo"></div>
-          <a href="#inicio"><div id="boton-volver">Volver</div></a>
+            <a id="boton-volver" href="#inicio"><span>Volver</span></a>
         </div>
       </section>
     </div>
   </main>
 
   <footer>
-    <div>
-      <div class="icono-red-social"><a href="https://github.com/schuman94"><img src="./images/github.png" alt="alt"></a></div>
-      <div class="icono-red-social"><a href="https://www.linkedin.com/feed/"><img src="./images/linkedin.png" alt="alt"></a></div>
-      <div class="icono-red-social"><a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="alt"></a></div>
-      <div class="icono-red-social"><a href="https://twitter.com/"><img src="./images/twitter.png" alt="alt"></a></div>
+    <div id="redes">
+      <div class="icono-red-social"><a href="https://github.com/schuman94"><img src="./images/github.png" alt="Enlace a mi Github"></a></div>
+      <div class="icono-red-social"><a href="https://www.linkedin.com/feed/"><img src="./images/linkedin.png" alt="Enlace a mi Linkedin"></a></div>
+      <div class="icono-red-social"><a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Enlace a mi Facebook"></a></div>
+      <div class="icono-red-social"><a href="https://twitter.com/"><img src="./images/twitter.png" alt="Enlace a mi Twitter"></a></div>
+    </div>
+
+    <div id="datosFooter">
+      <p>Sitio web realizado por Sergio Chulián Mantel.</p>
+      <p>Todas los recursos utilizados son de libre uso.</p>
+      <p>Última actualización: 28/02/2022</p>
+    </div>
+
+    <div id="validaciones">
+      <div>
+        <img src="images/html5-validator-badge.png" alt="HTML válido">
+      </div>
+
+      <div>
+        <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss"
+                  alt="CSS válido" />
+          </a>
+        </p>
+      </div>
+
+      <div>
+        <img src="images/wcag1AA.gif" alt="Validación accesibilidad AA">
+      </div>
     </div>
   </footer>
 </body>

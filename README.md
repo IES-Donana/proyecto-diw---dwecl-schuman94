@@ -1,13 +1,38 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6420638&assignment_repo_type=AssignmentRepo)
 # Proyecto DIW - DWECL
 
+<<<<<<< HEAD
+## ÍNDICE   
+=======
+<<<<<<< HEAD
+## ÍNDICE   
+=======
 ## ÍNDICE
+>>>>>>> main
+>>>>>>> main
 1. [DESCRIPCIÓN](#id1)
 2. [PROTOTIPO](#id2)
 3. [MODIFICACIONES A LA GUÍA DE ESTILOS](#id3)
 4. [RECURSOS](#id4)
 
 ## DESCRIPCIÓN<a name="id1"></a>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
+[Incluye la descripción de tu proyecto.]
+
+## PROTOTIPO<a name="id2"></a>
+[Incluye el enlace a tu prototipo realizado en Figma.]
+
+## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
+[Listado de modificaciones realizadas debidadmente justificadas. ]
+
+## RECURSOS<a name="id4"></a>
+[Listado de recursos usados]
+
+<<<<<<< HEAD
+=======
+=======
 Portafolio personal.
 Se muestran los proyectos realizados, testimonios de los clientes, currículum y formulario de contacto.
 
@@ -17,36 +42,21 @@ https://www.figma.com/proto/Y5duTmFe0GL7i8NRJ30nQL/Portafolio?node-id=1%3A3&scal
 
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-El botón utilizado como menú hamburguesa se introducido como fijo, de esta forma se evitar crear un botón para cada sección y resulta más apropiado para la entrega correspondiente a la asignatura Desarrollo Web en Entorno Cliente.
-Dicho botón pasa a ser del color rojo (presente en la guia de estilos) para que contraste con todos los fondos de las diferentes secciones.
+El botón utilizado como menú hamburguesa se introducido como fijo, de esta forma se evitar crear un botón para cada sección y resulta más apropiado para la entrega correspondiente a la asignatura Desarrollo Web en Entorno Cliente.Dicho botón pasa a ser del color rojo (presente en la guia de estilos) para que contraste con todos los fondos de las diferentes secciones.
 
-Los bloques de testimonios quedan fijos hasta que introduzcamos el contenido multimedia y implementemos el carrusel lateral.
+La sección testimonios ha sido modificada, ahora se presenta una imagen con los testimonios escritos y abajo un video.
 
-La linea de tiempo sigue igual para pantallas de escritorio con una resolución mayor a 1280 de ancho. Para menores, cambia a un aspecto más ajustado.
+La linea de tiempo sigue igual para pantallas de escritorio con una resolución mayor a 900 de alto. Para menores, cambia a un aspecto más ajustado en bloques.
 
-Nota: La página proyectos indicada en el mapa de navegación de la entrega anterior no era una página del portafolio, sino la propia web donde está alojado cada proyecto.
-No debería haberse indicado como tal.
+Nota: La página proyectos indicada en el mapa de navegación anterior no es una página del portafolio, sino la propia web donde está alojado cada proyecto.
+
+Se ha añadido un logo en la cabecera, y un botón en la sección de contacto que muestra un gif animado del logo.
 
 ## RECURSOS<a name="id4"></a>
-[Listado de recursos usados]
-
+>>>>>>> main
+>>>>>>> main
 - Can I use?: https://caniuse.com/
 - Bootstrap: https://getbootstrap.com/
 - Tailwind: https://tailwindcss.com/docs
 - W3C CSS Validator: https://jigsaw.w3.org/css-validator/
 - W3C HTML Validator: https://validator.w3.org/
-
-
-Se ha validado el css con https://jigsaw.w3.org/css-validator/
-No hay errores.
-
-Las advertencias mostradas no son fallos, sino situaciones en donde se utilizan los mismos colores de forma intencionada:
-
-444	.formulario button	Colores iguales para background-color y border-color
-453	.formulario button:active	Colores iguales para background-color y border-color
-517	#boton-volver	Colores iguales para background-color y border-color
-525	#boton-volver:active	Colores iguales para background-color y border-color
-
-Se ha validado el html con https://validator.w3.org/
-Se han corregido todos los errores, por lo que ya no presenta ninguno.
-Solo presenta una advertencia, la sección inicio no tiene un h2 al igual que el resto, no lo necesita por cuestiones de diseño.

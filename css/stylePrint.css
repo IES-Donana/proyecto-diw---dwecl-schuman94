@@ -1,0 +1,204 @@
+header {
+    display: none;
+}
+
+#contenedor-video-bg {
+    display: none;
+}
+
+#logo{
+    height: 30vh;
+    position: absolute;
+    right: 35%;
+    top: 5%;
+    margin: 2%;
+  }
+
+#letrero {
+    color: black;
+}
+
+#cuadro-morado {
+    margin-top: 20%;
+    background: white;
+}
+
+.desarrollador {
+    text-shadow: none;
+    font-size: 7vw;
+}
+
+.boton-menu {
+    color: black;
+    font-size: 3vw;
+    background-color: white;
+    margin: 2%;
+}
+
+/* No es necesario hover para imprimir*/
+.boton-menu:hover {
+    background-color: white;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+#testimonios h2, #sobremi h2 {
+    color: black;
+}
+
+/* Proyectos */
+
+#proyectos, #testimonios, #sobremi{
+    page-break-before: always;
+    height: auto;
+}
+
+
+#container-proyectos {
+    margin-top: 5%;
+    display: block;
+    color: black;
+}
+
+#proj1, #proj2, #proj3, #proj4, #proj5, #proj6 {
+    background-image: none;
+}
+
+
+#proj1:hover, #proj2:hover, #proj3:hover, #proj4:hover, #proj5:hover, #proj6:hover {
+    background-image: none;
+}
+
+.resumen-proj{
+    padding-top: 0;
+    height: auto;
+    font-size: 1.3em;
+    color: black;
+}
+
+
+.a-proj {
+    visibility: visible;
+}
+
+#container-proyectos a[href]::after {
+    content: "("attr(href)")";
+}
+
+.proj {
+    height: 10vh;
+    margin: 0;
+
+    flex:auto;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/* Testimonios */
+
+#video-testimonios {
+    display: none;
+}
+
+/* Sobre mi */
+
+#sobremi {
+    height: auto;
+}
+
+#container-aboutme {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#foto {
+    display: none;
+}
+
+#bio {
+    color: black;
+    height: auto;
+    flex: auto;
+    margin: 0;
+    font-family: Miriam;
+}
+
+#bio h3 {
+    color:#FF005C;
+    font-size: 1.6em;
+    margin-left: 2%;
+}
+
+#bio p {
+    margin-top: 1vh;
+    font-size: 1.2em;
+    margin: 2%;
+
+}
+
+#testimonios, #sobremi {
+    background-image: none;
+    color: black;
+}
+
+/* Contacto */
+
+#container-contacto {
+    height: auto;
+}
+
+#telefono-email {
+    width: 100%;
+    margin-left: 2.5%;
+}
+
+.contact_form, #details-logo, #volver {
+    display: none;
+}
+
+#contacto {
+    height: auto;
+}
+
+/* Footer */
+
+footer {
+    background-color: white;
+    height: 30vh;
+    display: block;
+    page-break-before: avoid;
+}
+
+#datosFooter {
+    color: black;
+    margin: 1% 2.5%;
+}
+
+#redes {
+    display: block;
+    justify-content:center;
+    width: 10vw;
+    margin: 1% 2%;
+}
+
+#redes img {
+    display: none;
+}
+
+.icono-red-social a {
+    color: black;
+}
+.icono-red-social a[href]:after {
+    content: attr(href);
+    font-size:medium;
+}
+
+.breadcrumb {
+    display: none;
+  }
